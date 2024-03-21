@@ -1,0 +1,45 @@
+ {
+    "blog":[
+        {
+            "id":1,
+            "title": "Mr",
+            "author": "Louie",
+            "description": "Author1",
+            "comments": ["This is the User"]
+        },
+        {
+            "id":2,
+            "title": "Ms",
+            "author": "Camille",
+            "description": "Author2",
+            "comments": ["Director"]
+        },
+        {
+            "id":3,
+            "title": "Mr",
+            "author": "Dereck",
+            "description": "Author3",
+            "comments": ["director","Expert"]
+        }
+    ],
+    "books":[
+        {
+            "id":1,
+            "name": "Louie",
+            "authors": "author1",
+            "isbn": "1234565"
+        },
+        {
+            "id":2,
+            "name": "Juan",
+            "authors": "author2",
+            "isbn": "987654321"
+        },
+        {
+            "id":3,
+            "name": "Maria",
+            "authors": ["author3","author1"],
+            "isbn": "888877777"
+        }]
+          
+ }

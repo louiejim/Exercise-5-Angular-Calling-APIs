@@ -1,0 +1,12 @@
+<p>blog-list works!</p>
+
+<app-command-bar (actionEmitter)="handleAction($event)"></app-command-bar>
+
+<div *ngFor="let blog of blogs">
+  <app-blog-item
+    [blogInput]="blog"
+    (editEmitter)="edit(blog.id)"
+    (deleteEmitter)="delete(blog.id)"
+  ></app-blog-item>
+
+</div>

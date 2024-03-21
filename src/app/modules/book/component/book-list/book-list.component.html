@@ -1,0 +1,13 @@
+<p>List of Book</p>
+
+<div>
+  <app-command-bar (actionEmitter)="handleAction($event)" ></app-command-bar>
+</div>
+
+<div *ngFor="let books of book">
+  <app-book-item
+    [childbook]="books"
+    (editEmitter)="edit(books.id)"
+    (deleteEmitter)="delete(books.id)"
+  ></app-book-item>
+</div>

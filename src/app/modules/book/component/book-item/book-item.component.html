@@ -1,0 +1,11 @@
+<div>
+  <br />Id: {{ book.id }} <br />
+  {{ book.name }}<br />
+  {{ book.authors }}<br />
+  {{ book.isbn }}<br /><br />
+</div>
+
+<button style="margin-right: 5px" (click)="editEmitter.emit(book.id)">
+  Edit
+</button>
+<button (click)="deleteEmitter.emit(book.id)">Delete</button>

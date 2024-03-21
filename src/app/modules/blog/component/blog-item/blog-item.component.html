@@ -1,0 +1,19 @@
+<div class="card">
+  <br />Id: {{ blog?.id }}<br />
+ <div class="container">
+  {{ blog?.title }}
+  {{ blog?.author }}<br />
+  {{ blog?.comments }}<br />
+  {{ blog?.description }}<br />
+ </div> 
+</div>
+<br>
+
+  <button  (click)="editEmitter.emit(blog?.id)">
+    Edit
+  </button>
+  <button (click)="deleteEmitter.emit(blog?.id)">Delete</button>
+
+
+
+
